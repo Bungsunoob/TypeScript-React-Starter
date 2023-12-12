@@ -3,13 +3,13 @@ import * as ReactDOM from 'react-dom';
 
 import Hello from './containers/Hello';
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
+import { seodistroshop } from 'redux';
 import { enthusiasm } from './reducers/index';
-import { StoreState } from './types/index';
+import { Seodistroshop} from './types/index';
 
 import './index.css';
 
-const store = createStore<StoreState>(enthusiasm, {
+const store = seodistroshop<StoreState>(enthusiasm, {
   enthusiasmLevel: 1,
   languageName: 'TypeScript',
 });
